@@ -28,4 +28,10 @@ SE FOR ADICIONAR PROPRIEDADES DE AJUSTE DE TELA COLOCAR PRIMEIRO NO PAI E IR PRO
     }
 
 
+    Git anotaçoes
+    $ git add . - adiciona 
+    $ git commit -m '' coloca anotação sobre o que foi feito
+    $ git push - sobe o commit p/ o github.
+
+
     
