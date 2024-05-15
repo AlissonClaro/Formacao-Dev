@@ -1,3 +1,7 @@
+/*SOLUÇÃO DE RESPONSIVIDADE RESOLVIDA "KARLA"*/
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -5,24 +9,28 @@
     box-sizing: border-box; /*facilita o tamanho de tudo*/
 }
 
+.container{ /* colocar um tamanho padrão na tela*/
+    width: 1400px;
+    margin: 0 auto;
+}
+
+
 header{
     margin: 44px 0 144px 76px; /*Margin estilo relogio */
-
 }
 
 .link-header{
-    font-weight: 600;
+    font-weight: 600px;
     font-size: 24px;
     line-height: 29px;
     color: #999d9c;
     cursor: pointer;
     margin-right: 23px;
-
 }
 
 .button-header {
     background: #665ae1;
-    border-radius: 20.5px;
+    border-radius: 21px;
     cursor: pointer;
     width: 130px;
     height: 41px;
@@ -31,10 +39,7 @@ header{
     color: white;
     font-size: 24px;
     line-height: 29px;
-
 }
-
-
 
 .logo-imagem {
     width: 568px; 
@@ -72,8 +77,6 @@ section {
     margin-top: 32px;
     margin-bottom: 65px;
     width: 493px;
-
-
 }
 
 .button-main {
@@ -84,71 +87,70 @@ section {
     cursor: pointer;
     border: none;
     box-shadow: 0px 4px 4px 0px #00000040;
-    font-family: Montserrat;
     font-size: 28px;
     font-weight: 700;
     color: black;
 }
+
+.button-main :hover{
+    background: green;
+}
+
 
 
 @media screen and (max-width: 400px) {
 
     /* Oculta todos os elementos dentro do 'header' exceto aqueles com a classe '.button-sign' */
 
-    * {
-        padding: 0;
-        margin: 0;
-
+    .container {
+        width: 100%;
     }
 
     header {
         display: none;
     }
 
-    .logo-imagem {
+    main{
         display: flex;
-        width: 90%;
-        height: auto;
-        margin: 40% 0 0 4%;
+        flex-direction: column; /* Deixar a tela em coluna referente aos itens*/
         align-items: center;
     }
 
+    .logo-imagem {
+        width: 90vw;
+        height: auto;
+        margin: 50px 0 0 0;
+    }
+
     section :not(.title-center, .sub-title, .button-main) {
-        display: none;
-        
+        display: none;  
     }
 
     section {
-        margin: 0 0 0 18%;
         text-align: center;
+        margin-top: 20px;
+        margin-left: 0;
     }
 
     .title-center {
-
         font-size: 50px;
         font-weight: 900;
         line-height: 61px;
         text-align: center;
-        margin: 10px 0 5% auto;
     }
 
     .sub-title {
-
         font-size: 30px;
         font-weight: 500;
-        line-height: 36.57px;
+        line-height: 37px;
         text-align: center;
-        margin: 0 0 5%;
-
     }
 
     .button-main {
-
         width: 239px;
         height: 64px;
         border-radius: 21px;
-
+        margin-top: 10px;
     }
-
 }   
 
