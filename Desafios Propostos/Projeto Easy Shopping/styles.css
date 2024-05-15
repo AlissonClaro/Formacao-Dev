@@ -249,7 +249,7 @@ header {
 }
 
 /* Media query para telas com largura máxima de 440px */
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 450px) {
 
     /* Ajustes para as imagens */
     img {
