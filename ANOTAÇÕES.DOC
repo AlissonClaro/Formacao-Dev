@@ -13,8 +13,6 @@ SE FOR ADICIONAR PROPRIEDADES DE AJUSTE DE TELA COLOCAR PRIMEIRO NO PAI E IR PRO
         width: 100%;
     }
 
-
-
         main{
         display: flex;
         flex-direction: column; /* Deixar a tela em coluna referente aos itens*/
