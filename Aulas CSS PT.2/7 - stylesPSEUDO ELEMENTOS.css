@@ -1,0 +1,118 @@
+ /*PSEUDO CLASSES
+ 
+    :active  ➞ quando o elemento esta ativo, ou seja, esta sendo pressionado
+    :visited  ➞ seleciona o link que foi visitado
+    :hover  ➞ quando o mouse passa em cima do elemento
+    :checked  ➞ usando em radio / checkbox / select
+    :disabled  ➞ elemento desabilitado / button / input
+    :enabled  ➞ elemento esta habilitado
+    :focus  ➞ é aplicada quando um elemento recebe foco. o que pode ocorrer quando o usuario seleciona o elemento
+    :read-only  ➞ seleciona input ou textarea que são apenas leitura
+    :empty  ➞ elemento que não tem filho
+
+    :first-child  ➞ primeiro filho / ex? primeira li de uma ul / primeiro span de uma div
+    :first-of-type  ➞ primeiro elemento de seu tipo entre os filhos de seu elemento pai
+    :last-child  ➞ ultimo filho
+    :last-of-type  ➞ ultimo elemento de seu tipo entre os filhos de seu elemento pai
+    :not()  ➞ estiliza os elementos, exceto o que esta dentro do () 
+    :nth-child()  ➞ seleciona o elemento baseado na sua posição, Ex: :nth-child(3)
+    :nth-last-child()  ➞ seleciona o elemento baseado na sua posição, contando de tras para frente.
+    
+ */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 60px;
+}
+
+
+/* INPUT NORMAL SEM SELEÇÃO
+input {
+    width: 60px;
+    height: 60px;
+}
+
+*/
+
+/* INPUT NORMAL SELECIONADO COM CHECKED
+
+input:checked {
+    width: 60px;
+    height: 60px;
+    color: blue;
+}
+
+*/
+
+/* INPUT NORMAL SELECIONADO COM CHECKED
+
+input:disabled {
+    width: 60px;
+    height: 60px;
+    color: gray;
+}
+
+*/
+
+/* MUDA DE COR AO PASSAR O MOUSE SOBRE O BOTAO
+button:hover {
+    color: yellow;
+    background: red;
+}
+*/
+
+
+/* focus  ➞ é aplicada quando um elemento recebe foco. o que pode ocorrer quando o usuario seleciona o elemento
+input:focus {
+    border: 2px solid blue;
+    outline: none;
+
+}
+
+*/
+
+/* read-only  ➞ seleciona unput ou textarea que são apenas leitura
+
+input :read-only{
+    border: 2px solid blue;
+    outline: none;
+}
+
+*/
+
+/* empty  ➞ elemento que não tem filho
+
+.container {
+    height: 100px;
+    width: 100px;
+    background: red;
+}
+
+.container:empty {
+    height: 100px;
+    width: 100px;
+    background: blue;
+}
+*/
+
+/*
+.container :not(p){
+    color: red;
+}
+*/
+
+/*
+.container :not(.excluido){
+    color: red;
+}
+*/
+
+li:nth-last-child(2) {
+    color: red;
+}
+
+li:nth-child(2) {
+    color: blue;
+}

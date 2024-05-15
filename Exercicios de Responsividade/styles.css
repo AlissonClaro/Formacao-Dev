@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    color: #5d5d7d;
+
+}
+
+.wrapper {
+    height: 100vh;
+    /* vai ocupar todo a tela na horizontal*/
+    width: 100vw;
+    /* vai ocupar todo a tela na vertical*/
+}
+
+.container-left {
+    display: inline-block;
+    /*O elemento gera uma caixa de elemento de bloco que fluirá com o conteúdo ao redor como se fosse uma única caixa em linha lado a lado na horizontal (comportando-se como um elemento substituído faria).
+    É equivalente a inline flow-root.*/
+    width: 60%;
+    /* vai ocupar 60% da horizontal*/
+    background-color: #FFFFFF;
+    padding-left: 136px;
+    margin-top: 23%;
+
+
+}
+
+.container-right {
+    background-color: rgb(93, 93, 125, 16%);
+    display: inline-block;
+    /*O elemento gera uma caixa de elemento de bloco que fluirá com o conteúdo ao redor como se fosse uma única caixa em linha lado a lado na horizontal (comportando-se como um elemento substituído faria).
+    É equivalente a inline flow-root.*/
+    width: 40%;
+    /* vai ocupar 40% da horizontal*/
+    height: 100vh;
+    position: absolute;
+}
+
+img {
+    position: relative;
+    top: 20%;
+    right: 130px;
+}
+
+header {
+    margin: 24px 0 0 20px;
+}
+
+.link-menu {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 42px;
+    text-decoration: none;
+    color: #5d5d7d;
+    margin-left: 30px;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.link-menu:hover {
+    opacity: 60%;
+    font-size: 35px;
+}
+
+.tittle-text {
+    /*width: 368px;
+    height: 160px; ----------- não colocar no projeto porque sobrepoe linhas limite*/
+
+    font-size: 70px;
+    line-height: 80px;
+    display: inline-block;
+}
+
+.text {
+    width: 540px;
+    height: 144px;  /* REGULA O TAMANHO DA CAIXA DE TEXTO*/
+    opacity: 60%;
+
+    font-size: 28px;
+    line-height: 48px;
+    /*margin: 50px 0 20px 0;*/
+    margin-top: 30px;
+    /* Margem superior */
+    margin-bottom: 20px;
+    /* Margem inferior */
+    
+
+}
+
+.button-text {
+    width: 269px;
+    height: 62px;
+    background: #9499EA;
+
+    box-shadow: 0px 10px 24px 0px #9499EA19;
+    border-radius: 30px;
+    border: none;
+
+    color: #FFFFFF;
+    font-size: 24px;
+    line-height: 36px;
+    cursor: pointer;
+
+}
+
+.button-text:hover {
+    opacity: 60%;
+}
+
+
+@media screen and (max-width: 1100px) {
+
+
+    header {
+        display: none;
+    }
+
+    .container-left {
+        width: 100%;
+        height: 50%; /* DEIXA A ALTURA APENAS EM 50% DA TELA */
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .container-right {
+        display: block; /* REGULA O SEGUNDO CONTAINER EM MODO DE BLOCO SEM ESTAR EM LINHA HORIZONTAL APENAS VERTICAL*/
+        width: 100%;
+        height: auto; /* COMPLEMENTA OS 50% DA TELA CONTAINER LEFT*/ 
+        padding: 40px; /* ADICIONA BORDA DENTRO DO CONTAINER */
+    }
+
+    img {
+        position: static;
+        /* Posicionamento padrão */
+        max-width: 80%;
+        /* Largura máxima de 90% */
+        margin: 0 20px;
+    }
+    
+    .tittle-text {
+        width: auto;
+        font-size: 28px;
+        line-height: 52px;
+        text-align: center;
+        margin: 58px 50px 0 50px;
+
+    }
+
+    .text {
+        margin: 10px 40px;
+        height: 120px;
+        width: auto;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+        
+
+    }
+
+
+    .button-text {
+        margin: 0 auto;
+        display: block;
+
+    }
+
+    
+
+}

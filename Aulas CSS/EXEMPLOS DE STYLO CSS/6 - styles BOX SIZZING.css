@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box; /* tudo fica dentro do limite da box 100w x 100h
+    box-sizing: content-box; /* tudo soma no width e no height 100w+ x 100h+ */
+}   
+
+
+.box {
+    width: 100px;
+    height: 100px;
+    background: #ff1493;
+    padding: 20px;
+    border: 10px solid #00f;
+
+    
+}
+
+
+
+/* BOX SIZZING */

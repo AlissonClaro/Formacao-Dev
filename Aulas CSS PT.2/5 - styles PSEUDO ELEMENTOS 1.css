@@ -1,0 +1,34 @@
+ /*PSEUDO ELEMENTOS*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+input{
+    border: 1px solid red;
+    color: blue;
+
+}
+
+input::placeholder {
+    color: violet;
+
+}
+
+p{
+    color: blue;
+
+}
+
+P::first-letter {
+    color: red;
+}
+
+p::first-line {
+    color: violet;
+
+}
+

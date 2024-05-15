@@ -1,0 +1,15 @@
+/*CSS É UMA FOLHA DE ESTILO EM CASCATA
+
+
+
+
+*/
+
+
+
+.texto, .botao, #segundo-botao {
+    color: red;
+    font-weight: bold;
+    font-size: 30px;
+}
+

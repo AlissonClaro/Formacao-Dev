@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+header{
+    margin: 44px 42px 144px 76px;
+}
+
+.header-links {
+    width: 79px;
+    height: 21px;
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 1px;
+    color: #17233d;
+    margin-right: 32px; /* espaçamento entre cada item do cabeçalho */
+    align-items: center;
+    cursor: pointer;
+
+}
+
+
+.button-sign {
+    width: 124px;
+    height: 51px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 6px;
+    border: 1px solid;
+    background: #6fbf44;
+    color: white;
+    border-color: #4cb538;
+    letter-spacing: 1px;
+    
+
+
+}
+
+.logo-imagem {
+    width: 595px;
+    height: 500px;
+    display: inline-block;
+    margin-left: 125px;
+    
+}
+
+main {
+    display: inline-block;
+    margin-left: 85px;
+    width: 493px;
+
+}
+
+.title-text {
+    width: 582px;
+    height: 164px;
+    font-weight: 700;
+    font-size: 62px;
+    line-height: 82px;
+    letter-spacing: 0.6px;
+    display: inline-block;
+    color: #161a49;
+}
+
+
+.text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 33px;
+    color: #4b505a;
+    letter-spacing: 0.5px;
+    width: 515px;
+    margin-top: 47px;
+    margin-bottom: 55px;
+
+}
+
+
+.text-footer {
+    width: 112px;
+    height: 27px;
+    font-weight: 500;
+    size: 18px;
+    line-height: 27px;
+    letter-spacing: 1px;
+    color: #6fbf44;
+    cursor: pointer;
+
+
+}
+
+
+/* Regra de mídia para telas com largura máxima de 1023px */
+@media screen and (max-width: 1023px) {
+
+    /* Oculta todos os elementos dentro do 'header' exceto aqueles com a classe '.button-sign' */
+    header :not(.button-sign) {
+        display: none;
+    }
+
+    /* Estiliza o botão com a classe '.button-sign' */
+    .button-sign {
+        max-width: 91px; /* Largura máxima do botão */
+        height: 31px; /* Altura do botão */
+        position: absolute; /* Posicionamento absoluto em relação ao seu contêiner mais próximo com posição relativa/absoluta/fixa */
+        right: 0%; /* Alinha o botão à direita do contêiner */
+        margin-right: 10px; /* Margem à direita do botão */
+        top: 8px; /* Posição do topo do botão */
+    }
+
+    /* Estiliza o elemento 'main' */
+    main {
+        display: flex; /* Usa Flexbox para o layout */
+        flex-direction: column; /* Organiza os filhos em uma coluna */
+        justify-content: center; /* Centraliza os filhos verticalmente */
+        align-items: center; /* Centraliza os filhos horizontalmente */
+        padding: 0; /* Sem preenchimento */
+        margin: 0; /* Sem margem */
+        min-width: 280px; /* Largura mínima do 'main' */
+        max-width: 1500px; /* Largura máxima do 'main' */
+        width: 100%; /* Largura ocupa 100% do contêiner pai */
+        height: 60vh; /* Altura é 60% da altura da viewport */
+        position: relative; /* Posicionamento relativo */
+        top: -30px; /* Desloca o 'main' 30px para cima */
+        transform: translateY(-58%); /* Desloca o 'main' para cima em 58% de sua própria altura */
+    }
+
+    /* Estiliza o texto do título */
+    .title-text {
+        font-size: 30px; /* Tamanho da fonte do título */
+        line-height: 30px; /* Altura da linha do título */
+        max-width: 278px; /* Largura máxima do título */
+        height: 60px; /* Altura do título */
+        margin-bottom: 29px; /* Margem inferior do título */
+        text-align: center; /* Centraliza o texto do título */
+    }
+
+    /* Estiliza o texto */
+    .text {
+        max-width: 304px; /* Largura máxima do texto */
+        height: 165px; /* Altura do texto */
+        margin-bottom: 26px; /* Margem inferior do texto */
+        text-align: center; /* Centraliza o texto */
+        margin-top: 16px; /* Margem superior do texto */
+    }
+
+    /* Estiliza a imagem do logo */
+    .logo-imagem {
+        max-width: 312px; /* Largura máxima da imagem */
+        height: 288px; /* Altura da imagem */
+        margin: auto; /* Margem automática para centralizar a imagem */
+        display: block; /* Exibe a imagem como um bloco */
+        top: 50px; /* Posição do topo da imagem */
+        transform: translateY(120%); /* Desloca a imagem para baixo em 120% de sua própria altura */
+    }
+
+    /* Estiliza o rodapé do texto */
+    .text-footer {
+        max-width: 113px; /* Largura máxima do rodapé do texto */
+        height: 27px; /* Altura do rodapé do texto */
+        margin-bottom: 180px; /* Margem inferior do rodapé do texto */
+        text-align: center; /* Centraliza o texto do rodapé */
+    }
+}

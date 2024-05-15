@@ -1,0 +1,28 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Sans+Condensed:wght@200..900&display=swap');
+
+h1 { 
+    color: red;
+    font-size: 64px;
+    font-family: "Reddit Sans Condensed", sans-serif;
+    font-style: italic;
+    text-shadow: 5px 5px 15px red;
+}
+
+p {
+    font-size: 30px; /* troca o tamanho do texto */
+    color: blue; /* troca a cor do texto */
+    font-weight: 100; /* troca a grossura do texto */
+    font-family: "Reddit Sans Condensed", sans-serif;
+    font-style: italic;
+    line-height: 50px; /* MUDA A ALTURA DO TEXTO E ESPAÇAMENTO*/
+    letter-spacing: 10px; /* MUDA A DISTANCIA DAS LETRAS*/
+    word-spacing: 40px; /* MUDA A DISTANCIA DAS PALAVRAS*/
+    text-align: center; /* JUSTIFICA O TEXTO*/
+   /* text-transform: uppercase;  DEIXA TODO O TEXTO MAISCULO*
+    text-transform: lowercase; /* DEIXA TODO O TEXTO MINUSCULO*
+    text-transform: capitalize /* DEIXA A PRIMEIRA LETRA DE CADA PALAVRA EM MAISCULO*/
+    text-transform: capitalize;
+    text-decoration: underline; /* DEIXA UMA LINHA ABAIXO DO TEXTO */
+
+}

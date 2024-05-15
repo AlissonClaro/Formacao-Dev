@@ -1,0 +1,150 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+header{
+    margin: 44px 0 0 76px; /*Margin estilo relogio */
+
+}
+
+.link-menu {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #17233D;
+    display: inline-block;
+    margin: 47px 27px;
+    padding-left: 10px;
+}
+
+.button-sign {
+    width: 124px;
+    height: 51px;
+    border: none;
+    background: #6FBF44;
+    border-radius: 15px;
+
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 1px;
+    text-align: center;
+
+}
+
+img { /* codigo para deixar a imagem lado da texto*/
+    width: 595px;
+    height: 500px;
+    display: inline-block;
+    margin-left: 125px;
+    margin-top: 60px;
+}
+
+main { /* codigo para jogar o texto lado da imagem*/
+    display: inline-block;
+    margin-left: 85px; 
+    width: 493px; 
+}
+
+.tittle-text {
+
+    font-size: 62px;
+    font-weight: 700;
+    line-height: 82px;
+    letter-spacing: 1px;
+    text-align: left;
+    color: #161A49;
+
+}
+
+.text {
+
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: 1px;
+    text-align: left;
+    margin-top: 40px;
+    margin-bottom: 44px;
+
+}
+
+.footer {
+ 
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    letter-spacing: 1px;
+    text-align: left;
+    color: #6fbf44;
+
+}
+
+
+@media screen and (max-width: 1030px){
+
+    header :not(.button-sign) {
+        display: none;
+    }
+
+    .button-sign {
+        position: absolute;
+        right: 0%;
+        margin-right: 10px; /* Margem à direita do botão */
+        top: 8px;
+        max-width: 91px;
+
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        transform: translateY(-58%);
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        width: 100%;
+        height: 60vh;
+        top: -30px;
+        min-height: 280px;
+        max-width: 1500px;
+    }
+
+
+    .tittle-text {
+        text-align: center;
+        font-size: 30px;
+        line-height: 30px;
+        max-width: 278px;
+        height: 60px;
+        margin-bottom: 29px;
+    }
+
+    .text {
+        text-align: center;
+        max-width: 304px;
+        margin-bottom: 26px;
+        margin-top: 16px;
+    }
+
+    img {
+        margin: auto;
+        max-width: 412px;
+        height: 388px;
+        display: block; 
+        top: 50px;
+        transform: translateY(130%);
+        
+    }
+}
+    

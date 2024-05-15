@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+@keyframes neonvanish {
+    from {
+        filter: drop-shadow(0 0 0 var(--cor-neonvanish));
+    }
+
+    to {
+        filter: drop-shadow(0 0 5px var(--cor-neonvanish));
+        opacity: 60%;
+    }
+}
+
+@keyframes neon {
+    from {
+        filter: drop-shadow(0 0 0 var(--cor-neon));
+    }
+
+    to {
+        filter: drop-shadow(0 0 5px var(--cor-neon));
+        
+    }
+}
+
+body {
+
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://source.unsplash.com/2560x1080/?landscape");
+
+}
+
+.caixa-maior {
+    background: black;
+    opacity: 0.7;
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: 30px;
+    width: 95%;
+    max-width: 450px;
+    animation: neon 2s alternate infinite ease-in-out;
+    --cor-neon: rgb(196, 196, 196);
+
+}
+
+
+.input-cidade {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 18px;
+    background-color: #7c7c7c2b;
+    color: white;
+    width: (100%-120px);
+
+
+}
+
+
+.botao-busca {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #7c7c7c2b;
+    cursor: pointer;
+    float: right;
+
+
+}
+
+.gif-globo {
+    border: none;
+    outline: none;
+    padding: 0px;
+    border-radius: 80px;
+    background-color: #7c7c7c2b;
+    cursor: default; /* Alterado de 'none' para 'default' */
+    float: right; /* Alterado de 'left' para 'right' */
+    width: 40%;
+
+}
+
+.img-busca {
+    width: 20px;
+
+}
+
+.caixa-media {
+    margin-top: 30px;
+
+
+}
+
+.cidade {
+    color: white;
+    font-size: 28px;
+    font-weight: 300;
+    --cor-neon: white
+    animation: neon 1s alternate infinite ease-in-out;
+}
+
+.temp {
+    font-size: 20px;
+    color: white;
+    margin-top: 20px;
+    animation: neon 2s alternate infinite ease-in-out;
+    --cor-neon: white
+
+
+
+}
+
+.temp-min {
+    font-size: 20px;
+    color: cornflowerblue;
+    margin-top: 20px;
+    animation: neon 1s alternate infinite ease-in-out;
+    --cor-neon: white
+
+
+}
+
+.temp-max {
+    font-size: 20px;
+    color: orangered;
+    margin-top: 20px;
+    animation: neon 1s alternate infinite ease-in-out;
+    --cor-neon: yellow;
+
+
+}
+
+.caixa-menor {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    width: 50vw;
+    animation: neonvanish 2s alternate infinite ease-in-out;
+    --cor-neon: white;
+
+}
+
+
+.texto-previsao {
+    color: white;
+    margin-left: 20px;
+    text-transform: capitalize;
+}
+
+
+.umidade {
+    color: white;
+    margin-left: 20px;
+}

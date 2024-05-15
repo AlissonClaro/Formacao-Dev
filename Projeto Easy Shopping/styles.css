@@ -1,0 +1,362 @@
+/* Reset padrão para garantir consistência entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Faz com que padding e border sejam incluídos no width/height */
+    font-family: "Oswald", sans-serif;
+    /* Define a fonte padrão */
+    font-weight: 400;
+    /* Define a espessura da fonte */
+}
+
+/* Estiliza o wrapper para ocupar toda a altura e largura da viewport */
+.wrapper {
+    height: 100vh;
+    /* 100% da altura da viewport */
+    width: 100vw;
+    /* 100% da largura da viewport */
+}
+
+/* Estiliza o container esquerdo */
+.container-left {
+    display: inline-block;
+    /* Permite que o elemento seja alinhado como inline, mas respeitando propriedades de block */
+    width: 60%;
+    /* Ocupa 60% da largura do seu container pai */
+    background-color: #FFFFFF;
+    /* Cor de fundo branca */
+    padding-left: 136px;
+    /* Espaçamento interno à esquerda */
+    margin-top: 16%;
+    /* Margem superior */
+}
+
+/* Estiliza o container direito */
+.container-right {
+    display: inline-block;
+    /* Mesmo comportamento do container-left */
+    width: 40%;
+    /* Ocupa 40% da largura do seu container pai */
+    background-color: rgba(93, 93, 125, 0.16);
+    /* Cor de fundo com transparência */
+    height: 100vh;
+    /* 100% da altura da viewport */
+    position: absolute;
+    /* Posicionamento absoluto em relação ao seu container pai */
+}
+
+/* Estiliza as imagens */
+img {
+    position: relative;
+    /* Posicionamento relativo ao seu ponto normal no fluxo do documento */
+    top: 25%;
+    /* Desloca a imagem 25% para baixo a partir do seu ponto normal */
+    right: 130px;
+    /* Desloca a imagem 130px para a esquerda a partir do seu ponto normal */
+}
+
+/* Estiliza os links do menu */
+.link-menu {
+    width: 376px;
+    /* Largura fixa */
+    height: 41px;
+    /* Altura fixa */
+    color: #5d5d7d;
+    /* Cor do texto */
+    cursor: pointer;
+    /* Muda o cursor para indicar clicabilidade */
+    text-decoration: none;
+    /* Remove o sublinhado dos links */
+    font-size: 28px;
+    /* Tamanho da fonte */
+    line-height: 41.5px;
+    /* Altura da linha */
+    text-align: center;
+    /* Alinha o texto ao centro */
+    margin-left: 30px;
+    /* Margem à esquerda */
+}
+
+/* Efeito de hover para os links do menu */
+.link-menu:hover {
+    color: #5d5d7d;
+    /* Mantém a cor do texto */
+    opacity: 0.4;
+    /* Reduz a opacidade para 40% */
+    cursor: pointer;
+    /* Mantém o cursor como pointer */
+}
+
+/* Estiliza o cabeçalho */
+header {
+    margin: 24px 0 0 57px;
+    /* Margens personalizadas */
+}
+
+/* Estiliza o texto do título */
+.tittle-text {
+    font-size: 70px;
+    /* Tamanho da fonte */
+    font-weight: 400;
+    /* Espessura da fonte */
+    line-height: 80px;
+    /* Altura da linha */
+    text-align: left;
+    /* Alinha o texto à esquerda */
+    display: inline-block;
+    /* Permite alinhamento como inline, mas respeitando propriedades de block */
+    color: #5d5d7d;
+    /* Cor do texto */
+}
+
+/* Estiliza o texto principal */
+.text {
+    width: 540px;
+    /* Largura fixa */
+    height: 144px;
+    /* Altura fixa */
+    color: rgba(93, 93, 125, 0.6);
+    /* Cor do texto com transparência */
+    font-size: 28px;
+    /* Tamanho da fonte */
+    line-height: 48px;
+    /* Altura da linha */
+    text-align: left;
+    /* Alinha o texto à esquerda */
+    margin-top: 50px;
+    /* Margem superior */
+    margin-bottom: 20px;
+    /* Margem inferior */
+}
+
+/* Estiliza o botão de texto */
+.button-text {
+    width: 269px;
+    /* Largura fixa */
+    height: 62px;
+    /* Altura fixa */
+    background: #9499ea;
+    /* Cor de fundo */
+    border: none;
+    /* Sem borda */
+    cursor: pointer;
+    /* Muda o cursor para indicar clicabilidade */
+    box-shadow: 0px 10px 24px 0px #9499EA19;
+    /* Sombra do botão */
+    border-radius: 30px;
+    /* Bordas arredondadas */
+    font-size: 24px;
+    /* Tamanho da fonte */
+    line-height: 36px;
+    /* Altura da linha */
+    text-align: center;
+    /* Alinha o texto ao centro */
+    color: #FFFFFF;
+    /* Cor do texto */
+}
+
+/* Efeito de hover para o botão de texto */
+.button-text:hover {
+    opacity: 0.8;
+    /* Reduz a opacidade para 80% */
+}
+
+/* Efeito de ativo para o botão de texto */
+.button-text:active {
+    opacity: 0.5;
+    /* Reduz a opacidade para 50% */
+}
+
+/* Media query para telas com largura máxima de 1030px */
+@media screen and (max-width: 1030px) {
+
+    /* Oculta todos os elementos dentro do 'header' exceto aqueles com a classe '.button-sign' */
+    header {
+        display: none;
+        /* Oculta o cabeçalho */
+    }
+
+    /* Ajustes para o container esquerdo */
+    .container-left {
+        width: 100%;
+        /* Ocupa 100% da largura */
+        height: 50%;
+        /* Ocupa 50% da altura */
+        padding: 0;
+        /* Sem espaçamento interno */
+        margin: 0;
+        /* Sem margem */
+    }
+
+    /* Ajustes para o container direito */
+    .container-right {
+        display: block;
+        /* Exibe como bloco */
+        height: auto;
+        /* Altura automática */
+        width: 100%;
+        /* Ocupa 100% da largura */
+        position: static;
+        /* Posicionamento padrão */
+        padding: 40px;
+        /* Espaçamento interno */
+    }
+
+    /* Ajustes para as imagens */
+    img {
+        position: static;
+        /* Posicionamento padrão */
+        max-width: 90%;
+        /* Largura máxima de 90% */
+    }
+
+    /* Ajustes para o texto do título */
+    .tittle-text {
+        font-size: 28px;
+        /* Tamanho da fonte reduzido */
+        line-height: 52px;
+        /* Altura da linha ajustada */
+        width: auto;
+        /* Largura automática */
+        margin: 58px 50px 0 50px;
+        /* Margens personalizadas */
+        text-align: center;
+        /* Alinha o texto ao centro */
+    }
+
+    /* Ajustes para o texto principal */
+    .text {
+        margin: 15px 40px;
+        /* Margens personalizadas */
+        width: auto;
+        /* Largura automática */
+        text-align: center;
+        /* Alinha o texto ao centro */
+        font-size: 14px;
+        /* Tamanho da fonte reduzido */
+        line-height: 24px;
+        /* Altura da linha ajustada */
+    }
+
+    /* Ajustes para o botão de texto */
+    .button-text {
+        margin: 0 auto;
+        /* Centraliza o botão */
+        display: block;
+        /* Exibe como bloco */
+    }
+}
+
+/* Media query para telas com largura máxima de 440px */
+@media screen and (max-width: 440px) {
+
+    /* Ajustes para as imagens */
+    img {
+        width: auto;
+        /* Largura automática */
+        margin-bottom: 10px;
+        /* Margem inferior */
+    }
+
+    /* Ajustes para o botão de texto */
+    .button-text {
+        margin: 0 auto;
+        /* Centraliza o botão */
+        display: block;
+        /* Exibe como bloco */
+        text-align: center;
+        /* Alinha o texto ao centro */
+    }
+
+    /* Ajustes para o texto principal */
+    .text {
+        margin: 50px 10px 0 10px;
+        /* Margens personalizadas */
+        width: auto;
+        /* Largura automática */
+        text-align: center;
+        /* Alinha o texto ao centro */
+        font-size: 14px;
+        /* Tamanho da fonte reduzido */
+        line-height: 24px;
+        /* Altura da linha ajustada */
+    }
+
+    /* Ajustes para o texto do título */
+    .tittle-text {
+        font-size: 28px;
+        /* Tamanho da fonte reduzido */
+        line-height: 52px;
+        /* Altura da linha ajustada */
+        width: auto;
+        /* Largura automática */
+        margin: 58px 50px
+    }
+
+    @media screen and (max-width: 440px) {
+        img {
+            width: auto;
+            margin-bottom: 10px;
+
+
+        }
+
+        .button-text {
+            margin: 0 auto;
+            display: block;
+            text-align: center;
+
+        }
+
+        .text {
+            margin: 50px 10px 0 10px;
+            width: auto;
+            text-align: center;
+            font-size: 14px;
+            line-height: 24px;
+
+        }
+
+        .tittle-text {
+            font-size: 28px;
+            line-height: 52px;
+            width: auto;
+            margin: 58px 50px 0 20%;
+            text-align: center;
+        }
+    }
+
+    @media screen and (max-width: 390px) {
+        img {
+            width: auto;
+
+
+        }
+
+        .button-text {
+            margin: 0 auto;
+            display: block;
+
+        }
+
+        .text {
+            margin: 0 40px;
+            width: auto;
+            text-align: center;
+            font-size: 14px;
+            line-height: 24px;
+
+        }
+
+        .tittle-text {
+            font-size: 28px;
+            line-height: 52px;
+            width: auto;
+            margin: 58px 50px 0 15%;
+            text-align: center;
+        }
+
+    }
+
+}

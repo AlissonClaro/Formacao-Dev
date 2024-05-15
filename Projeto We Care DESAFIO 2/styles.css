@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box; /*facilita o tamanho de tudo*/
+}
+
+header{
+    margin: 44px 0 144px 76px; /*Margin estilo relogio */
+
+}
+
+.link-header{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #999d9c;
+    cursor: pointer;
+    margin-right: 23px;
+
+}
+
+.button-header {
+    background: #665ae1;
+    border-radius: 20.5px;
+    cursor: pointer;
+    width: 130px;
+    height: 41px;
+    border: none;
+    
+    color: white;
+    font-size: 24px;
+    line-height: 29px;
+
+}
+
+
+
+.logo-imagem {
+    width: 568px; 
+    height: 500px;
+    margin-left: 125px;
+    display: inline-block; /*Para ficar ao lado do texto*/
+
+}
+
+section {
+    display: inline-block; /*Para ficar ao lado do imagem*/
+    margin-left: 86px;
+}
+
+.title-center {
+    font-weight: 900;
+    font-size: 100px;
+    line-height: 122px;
+    color: #515151;
+}
+
+.sub-title {
+    font-weight: 500;
+    font-size: 58px;
+    line-height: 71px;
+    color: #515151;
+}
+
+.text-title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #515151;
+    width: 515px;
+    margin-top: 32px;
+    margin-bottom: 65px;
+    width: 493px;
+
+
+}
+
+.button-main {
+    background: yellow;
+    border-radius: 50px;
+    width: 239px;
+    height: 64px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    font-family: Montserrat;
+    font-size: 28px;
+    font-weight: 700;
+    color: black;
+}
+
+
+@media screen and (max-width: 400px) {
+
+    /* Oculta todos os elementos dentro do 'header' exceto aqueles com a classe '.button-sign' */
+
+    * {
+        padding: 0;
+        margin: 0;
+
+    }
+
+    header {
+        display: none;
+    }
+
+    .logo-imagem {
+        display: flex;
+        width: 90%;
+        height: auto;
+        margin: 40% 0 0 4%;
+        align-items: center;
+    }
+
+    section :not(.title-center, .sub-title, .button-main) {
+        display: none;
+        
+    }
+
+    section {
+        margin: 0 0 0 18%;
+        text-align: center;
+    }
+
+    .title-center {
+
+        font-size: 50px;
+        font-weight: 900;
+        line-height: 61px;
+        text-align: center;
+        margin: 10px 0 5% auto;
+    }
+
+    .sub-title {
+
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 36.57px;
+        text-align: center;
+        margin: 0 0 5%;
+
+    }
+
+    .button-main {
+
+        width: 239px;
+        height: 64px;
+        border-radius: 21px;
+
+    }
+
+}   
+

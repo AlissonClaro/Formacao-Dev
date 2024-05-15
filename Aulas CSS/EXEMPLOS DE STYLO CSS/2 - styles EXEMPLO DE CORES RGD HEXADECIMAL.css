@@ -1,0 +1,33 @@
+.texto {
+    background: rgb(255, 255, 255);
+    background: rgb(0, 255, 0);
+    background: rgb(255, 0, 0);
+    background: rgb(255, 255, 0);
+    background: rgb(0, 0, 255);
+
+}
+
+/*
+RGB:
+
+    Red 
+    Green
+    Blue
+
+
+
+HEXADECIMAL
+
+DECIMAL (10): => 0,1,2,3,4,5,6,7,8,9
+HEXADECIMAL (16): => 0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F
+
+*/
+
+.texto {
+    background: #FFFFFF;
+    background: #FF0000;
+    background: #FFFF00;
+    background: #00FFFF;
+    background: #0000FF;
+    background: #FF00FF;
+}

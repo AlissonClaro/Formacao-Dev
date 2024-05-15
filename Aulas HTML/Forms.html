@@ -1,0 +1,40 @@
+<!-- FORMULARIOS
+
+    - CAPTURAR DADOS DE ENTRADA
+    - INPUT -> ENTRADA
+
+    -ACTION -> DEFINE PARA QUAL URL SERA ENVIADO OS DADOS , VAZIO ENVIA PARA MESMA URL
+    -METHOD
+        - GET
+        - POST
+    
+-->
+
+<!-- Method Post-> envia os dados em forma sigilo 
+            Get -> envia os dados a amostra -->
+
+        <!-- enctype="multipart/form-data" envia arquivos junto com os forms necessario setar no action do form isso no input -->
+<h1>Digite seu endereço</h1>
+
+<form action="" method="get" enctype="multipart/form-data">
+    <label>Nome:
+    <input type="text" name="rua" autocomplete="street-address">
+    </label>
+
+    <label>Numero:
+        <input type="number" name="number" autocomplete="cc-number">
+    </label>
+<br>
+    <label>E-mail:
+        <input type="email" name="email" autocomplete="cc-number">
+    </label>
+<br>
+    <label>Foto:
+        <input type="file" name="arquivo">
+    </label>
+<br>
+    <button type="submit">Enviar Dados</button>
+
+    <button type="reset">Reset</button>
+
+</form>

@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+20&family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+20&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Righteous&display=swap');    
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+
+@keyframes efeitoVento {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(-10px); }
+    100% { transform: translateX(0); }
+}
+
+
+@keyframes neon {
+    from {
+        filter: drop-shadow(0 0 0 var(--cor-neon));
+    }
+
+    to {
+        filter: drop-shadow(0 0 20px var(--cor-neon));
+        stroke: black;
+        font-weight: 400;
+    }
+
+}
+
+@keyframes neonBotao {
+    from {
+        filter: drop-shadow(0 0 0 var(--cor-neon));
+    }
+
+    to {
+        filter: drop-shadow(0 0 5px var(--cor-neon));
+        stroke: black;
+        font-weight: 400;
+    }
+
+}
+
+
+
+
+body {
+    font-size: 100%;
+    background: linear-gradient(28deg, rgba(7,0,111,1) 0%, rgba(77,77,255,1) 17%, rgba(146,237,255,1) 64%);
+
+}
+
+
+.cabecalho {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    padding: 24px;
+    gap: 18px;
+}
+
+.cabecalho-img {
+    height: 47px;
+    
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap: 22px;
+
+}
+
+.cabecalho-menu-item {
+    font-family: "Righteous", sans-serif;
+    color: black;
+    font-weight: 400;
+    font-size: 18px;
+
+}
+
+
+.conteudo {
+    margin-bottom: 38px;
+    border-top: 0.4px solid lightskyblue;
+
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.conteudo-principal-escrito {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+}
+
+.conteudo-titulo {
+    font-family: "Jersey 20", sans-serif;
+    font-size: 64px;
+    font-weight: 400;
+    color: black;
+    animation: neon 2s alternate infinite ease-in-out;
+    --cor-neon: black;
+    stroke: black;
+
+
+}
+
+.conteudo-subtitulo {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: black;
+    opacity: 70%;
+
+}
+
+.cliqueNoBotao {
+    background-color: lightskyblue;
+    width: 180px;
+    height: 57px;
+    border-radius: 20px;
+    animation: neonBotao  2s alternate infinite ease-in-out;
+    --cor-neon: black;
+    stroke: black;   
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 24px; 
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, .25);
+    display: inline-block;
+}
+
+.cliqueNoBotao:hover {
+    background-color: rgb(100, 84, 245);
+    width: 185px;
+    height: 62px;
+    border-radius: 20px;
+    animation: neonBotao 2s alternate infinite ease-in-out;
+    --cor-neon: #fff;
+    stroke: black;   
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 24px; 
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, .25);
+
+}
+
+
+.img-conteudo {
+    height: 430px;
+
+}
+
+
+.conteudo-segundario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 48px;
+
+}
+
+.conteudo-segundario-titulo {
+    border-top: 0.4px solid lightskyblue;
+    padding-top: 48px;
+    font-family: "Jersey 20", sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    color: black;
+    margin-bottom: 16px;
+}
+
+.conteudo-segundario-paragrafo {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: black;
+
+}
+
+.rodape {
+    padding: 32px;
+    border-top: 0.4px solid lightskyblue;
+
+}
+
+.img-rodape {
+    display: block;
+    margin: auto;
+
+}
+
+@media (max-width: 700px){
+
+    p { 
+        display:inline-flex;
+    }
+
+    .cabecalho {
+        flex-direction: column;
+        padding: 15px;
+        justify-content: first baseline;
+        
+    }
+
+    .conteudo-principal {
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        width: 100vw;
+        height: 65vh;
+    }
+
+    .conteudo-titulo {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    }
+
+    .img-conteudo {
+        width: 80vw;
+        height: auto;
+        align-items: center;
+
+    }
+    .conteudo-segundario {
+        display: none;
+
+    }
+
+    .rodape {
+        display: flex;
+        height: 100vh - 50px;
+        width: 100%;
+        align-items: end;
+    }
+    
+    .cliqueNoBotao {
+        display: none;
+
+
+    }
+
+ }

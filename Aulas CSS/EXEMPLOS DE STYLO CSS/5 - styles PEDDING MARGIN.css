@@ -1,0 +1,35 @@
+
+
+
+
+.box {
+    width: 50px;
+    height: 50px;
+    background: purple;
+    /* margin: 20px; espaçamento externo */
+     /* padding: 30px;  espaço interno */
+
+     margin-top: 20px;
+     margin-bottom: 30px;
+     margin-right: 10px;
+     margin-left: 5px; 
+
+     /*Atalho do relogio */
+     padding: 10px 50px 30px 5px;
+     /*       12h  15h 18h  21h  - POSIÇÃO DE HORAS PARA APLICAR MARGEM 
+
+     /*Atalho do relogio */
+     padding: 10px 50px 30px;
+     /*       12h  15h 18h  15h-21h  - POSIÇÃO DE HORAS PARA APLICAR MARGEM 
+
+     /*Atalho do relogio */
+     padding: 10px 50px;
+     /*       12h  15h 12h  15h-21h  - POSIÇÃO DE HORAS PARA APLICAR MARGEM 
+
+     /* padding-top: 20px;
+     padding-bottom: 30px;
+     padding-right: 10px;
+     padding-left: 5px; */
+
+}
+
