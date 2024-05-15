@@ -1,0 +1,31 @@
+
+
+
+
+RESPONSIVIDADE.
+
+
+SEMPRE ATRIBUIR A HIERARQUIA DE PAI PARA FILHO
+SE FOR ADICIONAR PROPRIEDADES DE AJUSTE DE TELA COLOCAR PRIMEIRO NO PAI E IR PROJETANDO AOS FILHOS.
+
+
+  .container {
+        width: 100%;
+    }
+
+
+
+        main{
+        display: flex;
+        flex-direction: column; /* Deixar a tela em coluna referente aos itens*/
+        align-items: center;
+    }
+
+        section {
+        text-align: center;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+
+    
