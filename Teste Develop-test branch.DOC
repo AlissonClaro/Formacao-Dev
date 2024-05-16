@@ -1,0 +1,48 @@
+
+
+
+
+RESPONSIVIDADE.
+
+
+SEMPRE ATRIBUIR A HIERARQUIA DE PAI PARA FILHO
+SE FOR ADICIONAR PROPRIEDADES DE AJUSTE DE TELA COLOCAR PRIMEIRO NO PAI E IR PROJETANDO AOS FILHOS.
+
+
+  .container {
+        width: 100%;
+    }
+
+        main{
+        display: flex;
+        flex-direction: column; /* Deixar a tela em coluna referente aos itens*/
+        align-items: center;
+    }
+
+        section {
+        text-align: center;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+
+    Git anotaçoes
+    $ git add . - adiciona 
+    $ git commit -m '' coloca anotação sobre o que foi feito -m de mensagem.
+    $ git push - sobe o commit p/ o github.
+
+    $ git status - ver arquivos alterados e situações dos mesmos.
+
+
+
+-COMO INICIAR UM NOVO REPOSITORIO.
+
+    $ git init
+    $ git add .
+    $ git commit -m''
+
+    $ git remote add origin https://github.com/....
+    $ git push --set-upstram original master
+    $ git status -verificar.
+
+    
