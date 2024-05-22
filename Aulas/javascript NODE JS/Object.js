@@ -30,3 +30,5 @@ const alisson = {
 alisson.address.number = 41
 
 console.log(alisson) //Traz a variavel dentro de alisson dentro de endereço dentro de Pais
+
+
