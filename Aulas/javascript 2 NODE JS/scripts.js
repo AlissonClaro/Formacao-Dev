@@ -11,6 +11,4 @@
  
 */
 
-const input = document.getElementById('main-input') //Id so retorna 1 elemento por ser unico.
 
-console.log(input)
