@@ -41,7 +41,23 @@ const elements = document.querySelector('.paragraph-js')
 
 const elements = document.querySelector('#main-input')
 
-*/
+
 const elements = document.querySelector('button.main-button')
 
 console.log(elements)
+
+
+
+const elements = document.querySelectorAll('p')
+
+console.log(elements)
+
+*/
+
+const element = document.querySelector('#main-input')
+
+//element.placeholder = "Agora é esse texto"
+
+element.value = 454545
+
+console.log(element)
