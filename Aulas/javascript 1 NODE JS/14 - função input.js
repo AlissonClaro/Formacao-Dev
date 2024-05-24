@@ -13,7 +13,7 @@
 const input = document.querySelector("#main-input")
 
 function cliqueiNoBotao () {
-    //alert('Mostra na tela')
+    //alert('Sinaliza na tela')
     console.log(input.value)
 }
 

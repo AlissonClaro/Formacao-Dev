@@ -13,10 +13,9 @@
 const input = document.querySelector("#main-input")
 
 function cliqueiNoBotao () {
-    //alert('Mostra na tela')
-    console.log(input.value)
+    alert("Botao clicado com sucesso")
 }
 
 function digiteiNoInput () {
-    console.log('Digitei no input')
+    console.log(input.value)
 }
