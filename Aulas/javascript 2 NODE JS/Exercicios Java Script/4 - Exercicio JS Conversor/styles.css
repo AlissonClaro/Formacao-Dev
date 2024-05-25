@@ -24,14 +24,14 @@ main {
     height: auto;
     border-radius: 20px;
     margin: 0 auto;
-    padding: 42px 24px 23px;
+    padding: 29px 24px 23px;
     border: 2px solid #000000;
 }
 
-img {
+.logo {
     display: block; /*macete para centralizar qlq coisa*/
-    margin: 10px auto auto;
-    scale: 90%;
+    margin: 10px auto 10px;
+    width: 230px;
 
 }
 
@@ -39,7 +39,6 @@ label {
     color: #000000;
     font-weight: 400;
     font-size: 14px;
-    font-weight: 900;
     margin-left: 10px;
 }
 
