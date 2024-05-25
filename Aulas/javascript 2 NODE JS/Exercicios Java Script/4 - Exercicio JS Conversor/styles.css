@@ -80,9 +80,6 @@ button:active {
     opacity: 0.6;
 }
 
-p{
-    text-align: center;
-}
 
 section{
     border: 2px solid darkcyan;
@@ -108,7 +105,15 @@ arrow {
 }
 
 .currency {
-    
+    color:#777777;
+    font-size: 14px;
+
+}
+
+.currency-value {
+    color: #555555;
+    font-weight: 900;
+    font-size: 28px;
 }
 
 
