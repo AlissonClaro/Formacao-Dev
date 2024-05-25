@@ -11,7 +11,7 @@
 .container{ /* colocar um tamanho padrão na tela*/
     width: 1400px;
     height: auto;
-    margin: 0 auto;
+   /* margin: 0 auto;*/
 }
 
 body{
@@ -22,8 +22,6 @@ body{
 main {
     width: 375px;
     height: auto;
-    /*background: #ffffff;*/
-    box-shadow: 5px #000000;
     border-radius: 20px;
     margin: 0 auto;
     padding: 42px 24px 23px;
@@ -33,8 +31,7 @@ main {
 img {
     display: block; /*macete para centralizar qlq coisa*/
     margin: 10px auto auto;
-    height: 70%;
-    width: 16.65%;
+    scale: 90%;
 
 }
 
@@ -89,10 +86,29 @@ p{
 
 section{
     border: 2px solid darkcyan;
-    margin-top: 32px;
+    margin-top: 36px;
     border-radius: 20px;
     padding: 12px;
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+arrow {
+    margin: 15px 0;
+}
+
+.currency-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.currency {
+    
 }
 
 
