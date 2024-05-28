@@ -4,7 +4,6 @@
     box-sizing: border-box;
     list-style: none;
     font-family: "Lobster", sans-serif;
-
 }
 
 body {
@@ -28,7 +27,6 @@ body {
     gap: 10%;
     z-index: 2;
 
-
     & img {
         width: 250px;
     }
@@ -38,7 +36,9 @@ body {
             display: grid;
             grid-template-columns: repeat(3, 200px)
                 /*repete 3x a fração em 200px*/
-
+        }
+        & li {
+            text-align: right;
         }
     }
 }
@@ -53,7 +53,6 @@ section {
         height: 100%;
         margin: auto;
         position: relative;
-
 
         & .item {
             position: absolute;
@@ -71,7 +70,6 @@ section {
                     width: 100%;
                     transform: rotate(-30deg);
                     /* rotaciona a imagem*/
-
                 }
             }
 
@@ -86,7 +84,6 @@ section {
                 align-items: end;
                 gap: 30px;
 
-
                 font-weight: 400;
                 font-style: normal;
                 font-size: 10px;
@@ -99,19 +96,17 @@ section {
                     font-size: 8em;
                     line-height: 1em;
                     margin-bottom: 35px;
-
                 }
 
                 & .car-information {
                     font-family: "League Gothic", sans-serif;
                     font-size: 25px;
                     font-style: italic;
-
                 }
 
                 & .description {
                     color: #d9d9d9;
-                    font-size: 12px;
+                    font-size: 16px;
                     text-align: right;
                     max-width: 400px;
                     font-family: "League Gothic", sans-serif;
@@ -153,7 +148,6 @@ section {
 
         & button:nth-child(1) {
             transform: scale(-1);
-
         }
 
         & button {
@@ -207,17 +201,14 @@ section {
 
             & .active {
                 background-color: #fff;
-
             }
         }
     }
-
 }
 
 section {
 
     & .list {
-
         & .item {
             transform: translateX(100vw);
             transition: 0.5s;
@@ -228,12 +219,10 @@ section {
                     transform: rotate(0);
                     transition: 0.5s;
                     transition-delay: 0.3s;
-
                 }
             }
 
             & .content {
-
                 & .car-information,
                 h2,
                 .description,
@@ -281,7 +270,6 @@ section {
 
                 }
             }
-
         }
     }
 }
