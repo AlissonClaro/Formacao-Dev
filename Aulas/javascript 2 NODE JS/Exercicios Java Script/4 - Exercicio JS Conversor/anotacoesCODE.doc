@@ -6,6 +6,16 @@
                     <option value="bitcoin">₿ Bitcoin</option>
 
 
+
+                     <img class="currency-img2" src="./assets/real.png" alt="logo-moeda-a-converter">
+                     <p class="currency-value-to-convert">R$ 0,00</p>
+
+
+
+
+
+
+
     //Desafio.
     const currencySelectFirst = document.querySelector('.currency-select-first')
     
