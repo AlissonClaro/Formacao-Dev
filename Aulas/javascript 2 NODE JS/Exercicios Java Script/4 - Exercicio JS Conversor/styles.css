@@ -100,7 +100,7 @@ arrow {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 4px;
+    gap: 2px;
 }
 
 .currency {
@@ -109,10 +109,13 @@ arrow {
 
 }
 
-.currency-value {
+.currency-value, .currency-value-to-convert {
     color: #555555;
     font-weight: 900;
     font-size: 28px;
 }
 
 
+.arrow-img {
+    margin: 5px 0 5px;
+}
