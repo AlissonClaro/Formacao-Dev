@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Edu SA Beginner", cursive;
+}
+
+
+/* Isso aplicará um fundo escuro a todo o corpo do documento */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura total da tela */
+    margin: 0; /* Remove a margem padrão */
+    background-color: #333; /* Cor de fundo escuro */
+    color: white; /* Cor do texto para contraste */
+    flex-direction: column; /* Organiza os itens em coluna */
+}
+
+h2 {
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    margin-top: 126px;
+    margin-bottom: 26px;
+
+}
+
+/* Estilização do botão */
+.btn {
+    background-color: #FFD700; /* Cor amarela */
+    border: none; /* Sem borda */
+    padding: 10px 20px; /* Espaçamento interno */
+    margin-top: 20px; /* Margem superior */
+    cursor: pointer; /* Cursor de clique */
+    font-weight: bold; /* Texto em negrito */
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn:active{
+    opacity: 0.8;
+}
+
+
+/* Estilização dos inputs */
+.input-min, .input-max {
+    margin: 5px; /* Margem externa */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 10px;
+    border: none;
+}
+
+.result {
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 26px;
+}
+
+/* Para garantir que a imagem não ultrapasse os limites da tela */
+img {
+    max-width: 100%;
+    height: auto;
+    
+}

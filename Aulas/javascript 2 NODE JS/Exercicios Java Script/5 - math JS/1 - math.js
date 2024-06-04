@@ -23,12 +23,13 @@ console.log(result)
 const result = Math.floor(3.14)
 console.log(result)
 
-
+const result = Math.random()
+console.log(result)
 
 
 - random() / numero aleatorio entre 0 e 1
 
 */
 
-const result = Math.floor(3.14)
+const result = Math.random()
 console.log(result)
