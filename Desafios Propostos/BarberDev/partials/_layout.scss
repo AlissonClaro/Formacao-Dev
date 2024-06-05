@@ -1,0 +1,29 @@
+
+/* Define um contêiner com largura máxima e centraliza horizontalmente */
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* Estilos para o plano de fundo da página inicial */
+.bg-home {
+    position: relative; /* Posicionamento relativo para elementos filhos absolutos */
+    
+}
+
+.bg-home::before {
+    content: '';
+    display: block; /* Exibe como um bloco, necessário para largura e altura */
+    position: absolute; /* Posicionamento absoluto em relação ao pai relativo */
+    background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), url('../assets/bg.svg');
+
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    opacity: 0.9;
+}
