@@ -3,9 +3,12 @@
 .container {
     max-width: 1440px;
     margin: 0 auto;
+    padding: 0 8px;
 }
 
+//Home-----------------------------------------------
 /* Estilos para o plano de fundo da página inicial */
+
 .bg-home {
     position: relative; /* Posicionamento relativo para elementos filhos absolutos */
     
@@ -15,8 +18,8 @@
     content: '';
     display: block; /* Exibe como um bloco, necessário para largura e altura */
     position: absolute; /* Posicionamento absoluto em relação ao pai relativo */
-    background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), url('../assets/bg.svg');
-
+    background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), url(../assets/bg.svg);
+    
     left: 0;
     top: 0;
     width: 100%;
@@ -25,5 +28,294 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 0;
-    opacity: 0.9;
+    opacity: 1;
+}
+//-------------------------------------------
+
+//Hero -----
+
+.hero {
+    color: $white-normal;
+    min-height: 80vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
+
+    h1 {
+        text-align: center;
+        line-height: 150%;
+        max-width: 940px;
+        font-size: 46px;
+    }
+
+    p {
+        text-align: center;
+        margin: 14px 0;
+    }
+}
+
+.button-contact {
+    padding: 14px 28px;
+    color: $white-normal;
+    background-color: $red-normal;
+    border: 0;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 14px 0;
+}
+
+.button-contact:hover {
+    animation: scaleButton 0.5s alternate infinite ease-in-out;
+}
+
+@keyframes scaleButton {
+    from {
+        transform:  scale(1);
+        opacity: 1;
+    }
+    to {
+        transform:  scale(1.07);
+        opacity: 0.9;
+        background-color: $black-normal;
+        border-radius: 5px;
+    }
+} 
+
+@media screen and (max-width: 768px) {
+    .hero {
+        min-height: 60vh;
+        
+        h1 {
+            font-size: 34px;
+            padding: 0 14px;
+            width: 100%;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }    
+}
+
+@media screen and (max-width: 480px) {
+    .hero h1 {
+        font-size: 34px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .hero {
+        min-height: 40vh;
+    
+        .hero h1 {
+            font-size: 24px;
+        }
+    }
+}
+
+//-------------------------------------------
+
+//ABOUT
+
+.changecolor {
+    color:$red-light;
+    cursor: pointer;
+}
+
+.about {
+    background-color: $primary-normal;
+    overflow: hidden;
+    color: $white-normal;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    padding: 34px 14px 64px 14px;
+    img{
+        max-width: 570px;
+    }
+}
+
+.about-content div {
+    flex: 1; //tenta ocupar a tela de forma uniforme
+}
+
+.about-description {
+    h2{
+        font-size: 38px;
+        margin-bottom: 24px;
+    }
+
+    p {
+        margin-bottom: 14px;
+        line-height: 150%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-content{
+        flex-direction: column;
+    }   
+}
+
+//-----------------------
+//SERVICES
+
+.services {
+    background-color: $white-normal;
+    color: $black-normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 54px 14px;
+}
+
+.services-content h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 14px;
+}
+
+.services-content p {
+    line-height: 150%;
+    margin-bottom: 14px;
+    text-align: center;
+    max-width: 780px;
+}
+
+.haircuts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 0 44px 34px 44px;
+}
+
+.haircut {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: $white-normal;
+    border-radius: 8px;
+    box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.45);
+    overflow: hidden; // esconde a borda da img deixa aredondada igual a borda da div haircut   
+    
+    img {
+        width: 100%;
+        max-width: 354px;
+        transition: transform 0.2s;
+    }
+}
+
+.haircut img:hover {
+    transform: scale(1.2);
+    z-index: 1;
+}
+
+.haircut-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 14px;
+    background-color: $white-normal;
+    z-index: 99;
+}
+
+.haircut-info button {
+    color: $white-normal;
+    background-color: $red-normal;
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: 0;
+    cursor: default;
+}
+
+@media screen and (max-width: 768px) {
+    .haircuts {
+        flex-direction: column;
+    }
+
+    .haircut img {
+        max-width: 740px;
+    }
+}
+
+//---------------------------
+//FOOTER
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 54px 0;
+    gap: 24px;
+    color: $white-normal;
+}
+
+.footer-icons {
+    display: flex;
+    gap: 8px;
+    color: $white-normal;
+}
+
+.copyright {
+    font-size: 10px;
+}
+
+
+//BOTAO WHATSAPP
+
+.btn-Whatsapp {
+    position: fixed;
+    bottom: 14px;
+    right: 24px;
+    z-index: 99;
+
+
+    img {
+        max-width: 64px;
+        transition: transform 0.4s;
+    }
+
+    img:hover {
+        transform: scale(1.1);
+
+    }
+}
+
+.btn-Whatsapp .tooltip-text {
+    visibility: hidden;
+    position: absolute;
+    width: 120px;
+    top: 8px;
+    left: -144px;
+    background-color: $black-normal;
+    color: $white-normal;
+    padding: 6px;
+    border-radius: 8px;
+    color: $white-normal;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+.btn-Whatsapp:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .btn-Whatsapp {
+        img {
+            max-width: 44px;
+        }
+    }
 }
