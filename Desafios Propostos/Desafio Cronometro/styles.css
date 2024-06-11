@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura total da tela */
+    margin: 0; /* Remove a margem padrão */
+    background-color: #333; /* Cor de fundo escuro */
+    color: white; /* Cor do texto para contraste */
+    flex-direction: column; /* Organiza os itens em coluna */
+}
+
+h1 {
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    margin-top: 126px;
+    margin-bottom: 26px;
+
+}
+
+/* Estilo para os botões e h1 */
+.btn {
+    background-color: #FFD700; /* Cor amarela */
+    border: none; /* Sem borda */
+    padding: 10px 20px; /* Espaçamento interno */
+    margin-top: 20px; /* Margem superior */
+    cursor: pointer; /* Cursor de clique */
+    font-weight: bold; /* Texto em negrito */
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn:active{
+    opacity: 0.8;
+}
+
