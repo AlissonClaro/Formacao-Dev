@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    
+}
+
+.container {
+    width: 350px;
+    height: 300px;
+    background-color: #054554; /* Cor de fundo da div */
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+    color: cornflowerblue;
+}
+
+input, button {
+    width: 90%; /* Largura do input e botão */
+    padding: 10px;
+    margin: 5px 0; /* Espaçamento entre input e botão */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+
+    outline: none; /* Remove o contorno ao focar */
+    box-shadow: none; /* Remove a sombra */
+}
+
+button:hover {
+    background-color: #4ab94f;
+}
+
+.result {
+    width: 90%; /* Largura do resultado */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 700;
+}
