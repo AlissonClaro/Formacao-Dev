@@ -10,7 +10,7 @@ const contacts = [{ name: 'Rodolfo', number: '(14)99999-9999' },
 
 function searchContact() {
     for (let i = 0; i < contacts.length; i++) {
-        if (input.value === contacts[i].name) {
+        if (input.value.toLowerCase() === contacts[i].name.toLowerCase()) {
             p.innerHTML = contacts[i].name + ' - ' + contacts[i].number
             return
         }
