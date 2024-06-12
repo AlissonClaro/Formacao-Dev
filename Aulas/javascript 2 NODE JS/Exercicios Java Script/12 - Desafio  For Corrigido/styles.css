@@ -11,16 +11,17 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #000000;
+    background: rgb(7,0,111);
+    background: linear-gradient(28deg, rgba(7,0,111,1) 0%, rgba(77,77,255,1) 21%, rgba(158,255,146,1) 81%);
     
 }
 
 .container {
     width: 350px;
     height: 300px;
-    background-color: #054554; /* Cor de fundo da div */
+    background-color: transparent; /* Cor de fundo da div */
     padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -29,7 +30,7 @@ body, html {
 
 h1{
     text-align: center;
-    color: cornflowerblue;
+    color: rgb(0, 0, 0);
 }
 
 input, button {
@@ -45,7 +46,7 @@ input, button {
 }
 
 button:hover {
-    background-color: #4ab94f;
+    background-color: rgb(69, 58, 221)
 }
 
 .result {
