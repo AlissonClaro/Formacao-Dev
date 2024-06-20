@@ -1,9 +1,10 @@
-let musica = document.querySelector('.audio');
 
-document.querySelector('.botao-play').addEventListener('click', tocarMusica);
+let musica = document.querySelector('.audio');
 
 function tocarMusica() {
     console.log('musica');
     musica.play();
 
 }
+
+document.querySelector('.botao-play').addEventListener('click', tocarMusica);
