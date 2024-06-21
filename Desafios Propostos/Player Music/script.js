@@ -92,7 +92,6 @@ function secToMinutes(seconds) {
 function duration(){
     let musicDuration = document.querySelector('.end');
     musicDuration.textContent = secToMinutes(Math.floor(musica.duration));
-    //musicDuration.textContent = segundosParaMinutos(Math.floor(currentSong.duration));
 }
 
 //eventos
