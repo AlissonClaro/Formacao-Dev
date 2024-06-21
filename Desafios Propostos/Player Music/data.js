@@ -31,106 +31,29 @@ let musics = [
 ];
 
 
-let musica = document.querySelector('.audio');
-let indexMusic = 0;
-let musicDuration = document.querySelector('.end');
-musica.addEventListener('loadeddata', duration);
-let image = document.querySelector('img');
-let musicName = document.querySelector('.description h2');
-let musicArtist = document.querySelector('.description i');
+//import * as musics from './data.js'
+//export * as data from './script'
 
 
-renderizeMusic(indexMusic);
+/*  
 
+musicName.style.opacity = 0; // Começa com opacidade 0
 
-//funções
-function renderizeMusic(index) {
-    musica.setAttribute('src', musics[index].src);
-    musica.addEventListener('loadeddata', () => {
-        musicName.textContent = musics[index].titulo;
-        musicArtist.textContent = musics[index].artista;
-        image.src = musics[index].img;
-        musicDuration.textContent = secToMinutes(Math.floor(musica.duration));
-
-        musica.addEventListener('ended', () => {
-            // Troque para a próxima música automaticamente
-            indexMusic = (indexMusic + 1) % musics.length;
-            renderizeMusic(indexMusic);
-            tocarMusica();
-        });
-    })
-    
+// Função para aplicar o efeito "fade in"
+function fadeIn() {
+    let opacity = 1;
+    const interval = setInterval(() => {
+        if (opacity >= 1) {
+            clearInterval(interval);
+        }
+        musicName.style.opacity = opacity;
+        opacity += 0.01; // Ajuste a velocidade do fade conforme necessário
+    }, 10); // Intervalo de atualização (em milissegundos)
 }
 
-function tocarMusica() {
-    musica.play();
-    document.querySelector('.pause').style.display = 'block';
-    document.querySelector('.botao-play').style.display = 'none';
-
-}
-
-function pausarMusica() {
-    musica.pause();
-    document.querySelector('.botao-play').style.display = 'block';
-    document.querySelector('.pause').style.display = 'none';
-}
-
-function updateBar() {
-    let progress = document.querySelector('progress');
-    progress.style.width = (musica.currentTime / musica.duration) * 100 + '%';
-    let timeUpdate = document.querySelector('.start');
-    timeUpdate.textContent = secToMinutes(Math.floor(musica.currentTime));
-}
-
-function secToMinutes(seconds) {
-    let minutesField = Math.floor(seconds / 60);
-    let secondsField = seconds % 60;
-    if (secondsField < 10) {
-        secondsField = '0' + secondsField;
-    }
-    return minutesField + ':' + secondsField;
-}
+// Chame a função quando trocar de música (por exemplo, no evento de clique)
+// Exemplo: quando o usuário clicar no botão "próximo"
+// fadeIn();
 
 
-function duration(){
-    let musicDuration = document.querySelector('.end');
-    musicDuration.textContent = secToMinutes(Math.floor(musica.duration));
-    //musicDuration.textContent = segundosParaMinutos(Math.floor(currentSong.duration));
-}
-
-
-
-
-//eventos
-
-document.querySelector('.botao-play').addEventListener('click', tocarMusica);
-document.querySelector('.botao-pause').addEventListener('click', pausarMusica);
-musica.addEventListener('timeupdate', updateBar);
-document.querySelector('.anterior').addEventListener('click', () => {
-    indexMusic--;
-    if(indexMusic < 0) {
-        indexMusic = 2;
-    }
-        renderizeMusic(indexMusic);
-        tocarMusica();
-
-});
-document.querySelector('.proximo').addEventListener('click', () => {
-    indexMusic++;
-    if(indexMusic > 29) {
-        indexMusic = 0;
-    }
-    renderizeMusic(indexMusic);
-    tocarMusica();
-});
-
-// Evento de clique na barra de progresso
-document.querySelector('.progress-bar').addEventListener('click', (event) => {
-    let progressBar = document.querySelector('.progress-bar');
-    let clickX = event.clientX - progressBar.getBoundingClientRect().left;
-    let totalWidth = progressBar.clientWidth;
-    let newPosition = (clickX / totalWidth) * musica.duration;
-
-    // Defina a nova posição da música
-    musica.currentTime = newPosition;
-});
+*/
