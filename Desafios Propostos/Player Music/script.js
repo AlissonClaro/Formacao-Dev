@@ -29,7 +29,7 @@ let musics = [
     {titulo:'We Come Back (Original Mix) ft. Victor Lou & Visage Music', artista:'Illusionize', src:'./music/We Come Back (Original Mix) ft. Victor Lou & Visage Music - Illusionize.mp3', img:'./resource/Illusionize.png'},
     {titulo:'With U ft. Volkoder', artista:'Illusionize', src:'./music/With U ft. Volkoder - Illusionize.mp3', img:'./resource/Illusionize.png'}
 ];
-
+// variaveis
 
 let musica = document.querySelector('.audio');
 let indexMusic = 0;
@@ -39,9 +39,7 @@ let image = document.querySelector('img');
 let musicName = document.querySelector('.description h2');
 let musicArtist = document.querySelector('.description i');
 
-
 renderizeMusic(indexMusic);
-
 
 //funções
 function renderizeMusic(index) {
@@ -58,8 +56,7 @@ function renderizeMusic(index) {
             renderizeMusic(indexMusic);
             tocarMusica();
         });
-    })
-    
+    })  
 }
 
 function tocarMusica() {
@@ -97,9 +94,6 @@ function duration(){
     musicDuration.textContent = secToMinutes(Math.floor(musica.duration));
     //musicDuration.textContent = segundosParaMinutos(Math.floor(currentSong.duration));
 }
-
-
-
 
 //eventos
 
