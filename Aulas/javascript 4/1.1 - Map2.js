@@ -10,12 +10,21 @@ const list = [
 ]
 
 const newList = list.map( user => {
-    
-    return {
-        name: user.name, 
-        braceletColor: user.vip ? 'black' : 'green' // if se a user.vip for true = vip pulseira ['black'] se não é ['green']
-        //O "Vip" vai ser substituido por braceletColor: + color
+    let braceletColor
+
+    if (user.vip) {
+        braceletColor = 'black'
+    } else {
+        braceletColor = 'green'
     }
+
+    const newUser = {
+        name: user.name, 
+        braceletColor: braceletColor
+    }
+
+    return newUser
 })
+
 
 console.log(newList)
