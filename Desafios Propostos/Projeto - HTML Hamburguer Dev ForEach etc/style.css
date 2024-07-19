@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column; /* Arrange buttons and images vertically */
+    align-items: center; /* Center everything horizontally */
+    min-height: 100vh; /* Ensure the body takes up full viewport height */
+}
+
+.container-buttons {
+    display: flex;
+    justify-content: center; /* Center buttons horizontally */
+    align-items: center; /* Center buttons vertically */
+    gap: 1rem;
+    padding: 3rem; /* Add some padding around the buttons */
+}
+
+.active {
+    width: 10rem;
+    background-color: #79cb15;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.active:hover {
+    opacity: 0.7;
+}
+
+ul {
+    list-style: none;
+    display:  grid;
+    grid-template-columns: 200px 200px 200px;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+li {
+    border: 2px solid #8133ff;
+    border-radius: 0.5rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+li:hover {
+    opacity: 0.7;
+}
+
+img {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+p {
+    color: #fff;
+}
+
+.item-price {
+    font-weight: bold;
+    color: #79cb15;
+}
