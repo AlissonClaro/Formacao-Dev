@@ -17,6 +17,4 @@ function showAll() {
     list.innerHTML = myLi
 }
 
-buttonShowAll.addEventListener('click', () => {
-    list.innerHTML = myLi
-})
+buttonShowAll.addEventListener('click',showAll)
