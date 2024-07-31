@@ -19,21 +19,21 @@ Delete -> Deletar
 import express, { request, response } from 'express'
 
 const app = express()
+const users = []
+
 
 app.use(express.json())
 
-app.get('/usuarios/:Merlyn', (req, res) => {
+app.get('/usuarios', (req, res) => {
     
-    console.log (req)
+    res.status(200).json (users)
 
-    res.send ('Ola rota acessada com sucesso!')
 })
 
 app.post('/usuarios', (req, res) => {
-
-    console.log (req)
-
-    res.send ('Ola esta é a rota post!')
+    users.push (req.body)
+    
+    res.status (201).json ({ message: "Usuario criado com sucesso"})
 })
 
 app.listen(3000)
