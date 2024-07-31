@@ -40,3 +40,8 @@ app.listen(3000)
 //http://localhost:3000
 //req = request - requisição
 //res = response - resposta
+
+/*Mongo-DB
+    user: allclaro
+    pw: HPXAb6SUNr
+*/
