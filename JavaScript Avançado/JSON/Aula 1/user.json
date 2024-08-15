@@ -1,0 +1,28 @@
+{
+    "nome": "Plinio",
+    "idade":    31,
+    "filhos":   null,
+    "hobbies":  ["Codar", "Filmes", "Jogar", "Academia"],  
+    "casado": true,
+    "empresas": {
+        "devclub": {
+            "fundada": 2021,
+            "colaboradores": 40 
+        },
+
+        "mosnter_app": {
+            "fundada": 2023,
+            "colaboradores": 4
+        },
+
+        "atlas": {
+            "fundada": 2023,
+            "colaboradores": 5
+        },
+
+        "agenda_sua": {
+            "fundada": 2020,
+            "colaboradores": 4
+        }
+    }
+}
