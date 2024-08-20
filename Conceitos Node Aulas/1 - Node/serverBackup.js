@@ -15,7 +15,7 @@ Delete -> Deletar
 
 */
 
-import express, { response } from 'express'
+import express from 'express'
 import { PrismaClient } from '@prisma/client'
 
 
@@ -44,7 +44,6 @@ app.post('/usuarios', async (req, res) => {
     console.log(user)
 
     res.status(201).json(user)
-
 })
 
 app.put('/usuarios/:id', async (req, res) => {
@@ -98,10 +97,5 @@ app.listen(3000)
     READ
     UPDATE
     DELETE
-
-
-Rodar Prisma e Node
-    npx prisma studio
-    npm run dev
 
 */
