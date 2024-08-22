@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+.container {
+    margin: 10px;
+    border: 1px solid #9758A6;
+    display: flex; /* propriedade resposanvel por alinha um objeto em linha flexivel*/
+    height: 800px;
+    width: 800px;
+    /* MAIN AXIS - eixo principal
+       CROSS AXIS  eixo secundario
+    */
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.block {
+    width: 100px;
+    height: 100px;
+    background: #CDD728;
+    border: 5px solid #9758A6;
+    border-radius: 5px;
+    color:black;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px;
+}
